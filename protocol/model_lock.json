@@ -1,0 +1,87 @@
+{
+  "laya": {
+    "repo": "convaiinnovations/laya",
+    "revision": "5e7b2b1b8ca2ecdd3f2322d94069c9b6ce7e844b",
+    "gated": false,
+    "pipeline_tag": "text-classification",
+    "downloaded": true,
+    "local_path": "models/laya"
+  },
+  "protectai": {
+    "repo": "protectai/deberta-v3-base-prompt-injection-v2",
+    "revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+    "gated": false,
+    "pipeline_tag": "text-classification",
+    "downloaded": true,
+    "local_path": "models/protectai"
+  },
+  "decider": {
+    "repo": "Mapika/decider-2b",
+    "revision": "fa996cea58e1c1d8d1ab4d7124154f303b017f95",
+    "gated": false,
+    "pipeline_tag": "text-classification",
+    "downloaded": true,
+    "local_path": "models/decider",
+    "inference_ready": true
+  },
+  "nimble": {
+    "repo": "bespokelabs/Bespoke-Nimble-9B",
+    "revision": "e93fabce8fcee46e7e8b45e2d955b8a4f0035917",
+    "gated": false,
+    "pipeline_tag": "text-classification",
+    "downloaded": true,
+    "local_path": "models/nimble",
+    "inference_ready": true,
+    "base_local_path": "models/nimble_base",
+    "base_model": "Qwen/Qwen3.5-9B",
+    "base_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "release_path": "models/nimble_release",
+    "adapter_sha256": "ba7e28acb97f973e80fa51f3aa6fc6f75ea4081b89632ed45d8e5f3a1d7bfa6b"
+  },
+  "piguard": {
+    "repo": "leolee99/PIGuard",
+    "revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+    "gated": false,
+    "downloaded": true,
+    "local_path": "models/piguard",
+    "pipeline_tag": "text-classification",
+    "inference_ready": true
+  },
+  "prompt_guard_2": {
+    "repo": "meta-llama/Llama-Prompt-Guard-2-86M",
+    "revision": "a8ded8e697ce7c355e395a0df51f94adb4a2fd27",
+    "gated": "manual",
+    "downloaded": true,
+    "local_path": "models/prompt_guard_2",
+    "access_status": "authorized_200",
+    "pipeline_tag": "text-classification",
+    "inference_ready": true
+  },
+  "wildguard": {
+    "repo": "allenai/wildguard",
+    "revision": "cbba4823f3e8020e5a74a5e29bf85072def6f2ff",
+    "gated": true,
+    "downloaded": true,
+    "local_path": "models/wildguard",
+    "access_status": "authorized_200",
+    "inference_ready": true
+  },
+  "decider_parent": {
+    "repo": "Qwen/Qwen3.5-2B-Base",
+    "revision": "b1485b2fa6dfa1287294f269f5fb618e03d52d7c",
+    "gated": false,
+    "downloaded": true,
+    "local_path": "models/decider_parent",
+    "pipeline_tag": "image-text-to-text",
+    "inference_ready": true,
+    "text_export_path": "models/decider_parent_text"
+  },
+  "nimble_parent": {
+    "repo": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "local_path": "models/nimble_base",
+    "downloaded": true,
+    "inference_ready": true,
+    "gated": false
+  }
+}

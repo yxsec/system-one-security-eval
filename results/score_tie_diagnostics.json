@@ -1,0 +1,42 @@
+{
+  "scope": "Descriptive endpoint-score ties on original shared Jev predictions",
+  "model_inference_performed": false,
+  "source_hashes": {
+    "data/predictions/primary_classification.jsonl.gz": "4168d71a4bd095cb1fc742b6ecf6e62ab25911e8f5a91c2d134e679a2019c6ac"
+  },
+  "datasets": {
+    "wainject": {
+      "n": 1612,
+      "p_zero_n": 1320,
+      "p_zero_errors": 102,
+      "p_one_n": 3,
+      "p_one_errors": 0,
+      "first_confidence_group_n": 1323,
+      "first_confidence_group_errors": 102,
+      "first_confidence_group_coverage": 0.8207196029776674,
+      "first_confidence_group_risk": 0.07709750566893424
+    },
+    "rjudge": {
+      "n": 236,
+      "p_zero_n": 1,
+      "p_zero_errors": 0,
+      "p_one_n": 17,
+      "p_one_errors": 0,
+      "first_confidence_group_n": 18,
+      "first_confidence_group_errors": 0,
+      "first_confidence_group_coverage": 0.07627118644067797,
+      "first_confidence_group_risk": 0.0
+    },
+    "agentharm": {
+      "n": 352,
+      "p_zero_n": 24,
+      "p_zero_errors": 0,
+      "p_one_n": 102,
+      "p_one_errors": 2,
+      "first_confidence_group_n": 126,
+      "first_confidence_group_errors": 2,
+      "first_confidence_group_coverage": 0.35795454545454547,
+      "first_confidence_group_risk": 0.015873015873015872
+    }
+  }
+}

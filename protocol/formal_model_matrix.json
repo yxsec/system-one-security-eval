@@ -1,0 +1,213 @@
+{
+  "status": "frozen",
+  "selection_rule": "Complete the declared scientific controls; do not select models by held-out performance.",
+  "roles": [
+    {
+      "id": "jev",
+      "family": "typed",
+      "required": true,
+      "tasks": [
+        "wainject",
+        "rjudge",
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/pilot_jev/wainject__jev",
+        "runs/pilot_jev/rjudge__jev",
+        "runs/agentharm_development/agentharm__jev"
+      ],
+      "implementation_model": "jev",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "laya",
+      "family": "typed",
+      "required": true,
+      "tasks": [
+        "wainject",
+        "rjudge",
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/pilot_v1/wainject__laya",
+        "runs/pilot_v1/rjudge__laya",
+        "runs/agentharm_development/agentharm__laya"
+      ],
+      "implementation_model": "laya",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "decider",
+      "family": "typed",
+      "required": true,
+      "tasks": [
+        "wainject",
+        "rjudge",
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/pilot_system_one/wainject__decider",
+        "runs/pilot_system_one/rjudge__decider",
+        "runs/agentharm_development/agentharm__decider"
+      ],
+      "implementation_model": "decider",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "nimble",
+      "family": "typed",
+      "required": true,
+      "tasks": [
+        "wainject",
+        "rjudge",
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/pilot_system_one/wainject__nimble",
+        "runs/pilot_system_one/rjudge__nimble",
+        "runs/agentharm_development/agentharm__nimble"
+      ],
+      "implementation_model": "nimble",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "strong_hosted_judge",
+      "family": "general_judge",
+      "required": true,
+      "tasks": [
+        "wainject",
+        "rjudge",
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/baseline_completion/wainject__gpt41",
+        "runs/baseline_completion/rjudge__gpt41",
+        "runs/baseline_completion/agentharm__gpt41"
+      ],
+      "note": "GPT-4.1 through OpenRouter/OpenAI; catalog canonical slug 2025-04-14; live response uses alias, so snapshot fidelity remains limited.",
+      "implementation_model": "gpt41",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "small_open_judge",
+      "family": "general_judge",
+      "required": true,
+      "tasks": [
+        "wainject",
+        "rjudge",
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/pilot_dashscope/wainject__qwen3_8b_dashscope",
+        "runs/pilot_dashscope_complete/rjudge__qwen3_8b_dashscope",
+        "runs/agentharm_development/agentharm__qwen3_8b_dashscope"
+      ],
+      "implementation_model": "qwen3_8b_dashscope",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "protectai",
+      "family": "specialized",
+      "required": true,
+      "tasks": [
+        "wainject"
+      ],
+      "development_runs": [
+        "runs/pilot_v1/wainject__protectai"
+      ],
+      "implementation_model": "protectai",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "piguard",
+      "family": "specialized",
+      "required": true,
+      "tasks": [
+        "wainject"
+      ],
+      "development_runs": [
+        "runs/baseline_completion/wainject__piguard"
+      ],
+      "implementation_model": "piguard",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "prompt_guard_2",
+      "family": "specialized",
+      "required": true,
+      "tasks": [
+        "wainject"
+      ],
+      "development_runs": [
+        "runs/baseline_completion/wainject__prompt_guard_2"
+      ],
+      "implementation_model": "prompt_guard_2",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "wildguard",
+      "family": "specialized",
+      "required": true,
+      "tasks": [
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/baseline_completion/agentharm__wildguard"
+      ],
+      "implementation_model": "wildguard",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "decider_parent_readout",
+      "family": "matched_parent",
+      "required": true,
+      "tasks": [
+        "wainject",
+        "rjudge",
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/baseline_completion/wainject__decider_parent_readout",
+        "runs/baseline_completion/rjudge__decider_parent_readout",
+        "runs/baseline_completion/agentharm__decider_parent_readout"
+      ],
+      "note": "Qwen3.5-2B-Base parent weights and matched candidate scoring; not an instruction judge.",
+      "implementation_model": "decider_parent_readout",
+      "adapter_config": "configs/pilot.json"
+    },
+    {
+      "id": "nimble_parent_readout",
+      "family": "matched_parent",
+      "required": true,
+      "tasks": [
+        "wainject",
+        "rjudge",
+        "agentharm"
+      ],
+      "development_runs": [
+        "runs/baseline_completion/wainject__nimble_parent_readout",
+        "runs/baseline_completion/rjudge__nimble_parent_readout",
+        "runs/baseline_completion/agentharm__nimble_parent_readout"
+      ],
+      "note": "Pinned Qwen3.5-9B unadapted base with matched official candidate scorer at temperature 1; all three development tasks completed.",
+      "implementation_model": "nimble_parent_readout",
+      "adapter_config": "configs/pilot.json"
+    }
+  ],
+  "conditional_replication": [
+    "One original WAInject text baseline if its original artifact is usable; record a failed reproduction explicitly."
+  ],
+  "optional": [
+    "second_hosted_provider",
+    "larger_instruction_judge",
+    "CaMeL",
+    "general_moderation"
+  ],
+  "development_only": [
+    "gpt41mini"
+  ],
+  "excluded_datasets": [
+    "SafeAgentBench",
+    "AgentHazard"
+  ]
+}

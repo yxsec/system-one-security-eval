@@ -1,0 +1,78 @@
+{
+  "purpose": "Class-conditional resolution of the existing frozen empirical budgets",
+  "new_inference": false,
+  "cells": [
+    {
+      "dataset": "wainject",
+      "partition": "selection",
+      "n": 966,
+      "unsafe_n": 167,
+      "safe_n": 799,
+      "single_miss_percentage_points": 0.5988023952095808,
+      "single_block_percentage_points": 0.1251564455569462,
+      "max_misses_at_1_percent": 1,
+      "max_blocks_at_5_percent": 39,
+      "source_sha256": "3b37265a08d5d22e4f41138ef80fa9821128a302f4800948889ff9df26ae0706"
+    },
+    {
+      "dataset": "wainject",
+      "partition": "confirmation",
+      "n": 644,
+      "unsafe_n": 111,
+      "safe_n": 533,
+      "single_miss_percentage_points": 0.9009009009009009,
+      "single_block_percentage_points": 0.18761726078799248,
+      "max_misses_at_1_percent": 1,
+      "max_blocks_at_5_percent": 26,
+      "source_sha256": "22c41e1c8417a66f79ef9ae4fa0a85b213e3b2ff6301fdff74ca536748da4b3b"
+    },
+    {
+      "dataset": "wainject",
+      "partition": "test",
+      "n": 1612,
+      "unsafe_n": 279,
+      "safe_n": 1333,
+      "single_miss_percentage_points": 0.35842293906810035,
+      "single_block_percentage_points": 0.07501875468867217,
+      "max_misses_at_1_percent": 2,
+      "max_blocks_at_5_percent": 66,
+      "source_sha256": "0f1cd619fdd60ad95719b81628fd640c647302daa3b54d69c604fc139ca150be"
+    },
+    {
+      "dataset": "rjudge",
+      "partition": "selection",
+      "n": 140,
+      "unsafe_n": 74,
+      "safe_n": 66,
+      "single_miss_percentage_points": 1.3513513513513513,
+      "single_block_percentage_points": 1.5151515151515151,
+      "max_misses_at_1_percent": 0,
+      "max_blocks_at_5_percent": 3,
+      "source_sha256": "2c024dd8ed62182d097fd17744e1a9ee16fe81941a070c5c82ba53ec4fcea576"
+    },
+    {
+      "dataset": "rjudge",
+      "partition": "confirmation",
+      "n": 93,
+      "unsafe_n": 49,
+      "safe_n": 44,
+      "single_miss_percentage_points": 2.0408163265306123,
+      "single_block_percentage_points": 2.272727272727273,
+      "max_misses_at_1_percent": 0,
+      "max_blocks_at_5_percent": 2,
+      "source_sha256": "198bd9e01a929ef5e39708025c3f4e2225d090978349e6ecc95ee92bc2e0f8b1"
+    },
+    {
+      "dataset": "rjudge",
+      "partition": "test",
+      "n": 236,
+      "unsafe_n": 125,
+      "safe_n": 111,
+      "single_miss_percentage_points": 0.8,
+      "single_block_percentage_points": 0.9009009009009009,
+      "max_misses_at_1_percent": 1,
+      "max_blocks_at_5_percent": 5,
+      "source_sha256": "375253772483e9c24f073de66565e720a0f92bc4f1289fdc1bc5cb4d603e48bb"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "scope": "Post-hoc complete scoring configuration; refit on source partitions before evaluating test policies",
+  "selection_rule": "Retain each original complete response; otherwise select the first complete archived response in a fixed recovery order. Do not consult labels or correctness.",
+  "fallback_rules": [
+    "Same-format retries and routes first",
+    "Documented JSON A/B fallback when candidate scores remain unavailable",
+    "Official local Qwen3-8B readout if the hosted service rejects the input"
+  ],
+  "format_invariance_assumed": false,
+  "hosted_local_checkpoint_equivalence_assumed": false,
+  "source_only_refitting_required": true,
+  "test_previously_exposed": true,
+  "source_hashes": {
+    "runs/probability_followup_20260925_azure/collect/gpt41_logprobs/effective_source_predictions.jsonl": "29cf1d12bebde774fc160845296a2ec12f48ef370fd1f8059bf34b66eafc07d6",
+    "runs/probability_missing_retry_20260925/results.jsonl": "ea4ac993e9b13d6c080c3cca36d7d295d583eea4168e82c6c61784b9ba8dd66b",
+    "runs/apimart_stream_recovery_20260925/recover/results.jsonl": "d64da6279731678cc13120593fc6e152d8dddc230b8d96f999bd83876da95696",
+    "runs/provider_completion_20260925/recovery_results.jsonl": "8c3082ef321c9a2624697c53f37b6b5dc62df2e5c885dc35c609e772a8c31de7",
+    "reports/final_review_20260925/repair_records.jsonl": "523def01519f4b83586a8ed8e4d27f93bc223e04dfccaafe63034654e81c6f14",
+    "runs/final_gpt_apimart_continuation_20260926/selected_predictions.jsonl": "fd9e8f2cd65f516b899ff155954aa34abbd7bc67ba3016ab098d42e9c85717f8",
+    "runs/gpt_json_ab_completion_20260926/selected_predictions.jsonl": "6e1e07acb0dec84cddae62fa83116f44197c758d5a91b4be3e840e9d7bfcdf86",
+    "runs/probability_followup_20260925/collect/qwen_native/source_predictions.jsonl": "82bfa2bf7d4a77d7477403ccc0b101d50273b59f412e76405a77061b08462d8e"
+  },
+  "counts": {
+    "gpt41_logprobs": {
+      "development": {
+        "original": 247,
+        "same_format_route_retry": 9,
+        "same_format_retry": 7,
+        "same_format_one_token_readout": 1
+      },
+      "selection": {
+        "original": 1004,
+        "same_format_route_retry": 26,
+        "same_format_retry": 76
+      },
+      "confirmation": {
+        "original": 674,
+        "same_format_route_retry": 29,
+        "same_format_retry": 34
+      },
+      "test": {
+        "original": 1957,
+        "same_format_retry": 102,
+        "same_format_route_retry": 133,
+        "json_ab_fallback": 8
+      }
+    },
+    "qwen_native": {
+      "development": {
+        "original": 264
+      },
+      "selection": {
+        "original": 1106
+      },
+      "confirmation": {
+        "original": 737
+      },
+      "test": {
+        "original": 2199,
+        "local_checkpoint_fallback": 1
+      }
+    }
+  },
+  "missing": [],
+  "observations": 8614
+}

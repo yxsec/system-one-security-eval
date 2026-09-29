@@ -1,0 +1,278 @@
+{
+  "jev": {
+    "kind": "jev_openrouter",
+    "model": "typesafe/jev-1.13",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ]
+  },
+  "laya": {
+    "kind": "laya",
+    "device": "cpu",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ],
+    "max_len_override": 2048
+  },
+  "decider": {
+    "kind": "decider",
+    "device": "mps",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ]
+  },
+  "nimble": {
+    "kind": "nimble",
+    "device": "mlx_metal",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ],
+    "max_input_tokens": 262143
+  },
+  "gpt41": {
+    "kind": "openrouter",
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "max_tokens": 16,
+    "logprobs": false,
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ]
+  },
+  "qwen3_8b": {
+    "kind": "openrouter",
+    "model": "qwen/qwen3-8b",
+    "provider": "Alibaba",
+    "max_tokens": 16,
+    "reasoning_disabled": true,
+    "logprobs": false,
+    "pace_seconds": 1,
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ]
+  },
+  "protectai": {
+    "kind": "protectai",
+    "device": "cpu",
+    "datasets": [
+      "wainject"
+    ]
+  },
+  "piguard": {
+    "kind": "piguard",
+    "device": "cpu",
+    "datasets": [
+      "wainject"
+    ]
+  },
+  "prompt_guard_2": {
+    "kind": "prompt_guard_2",
+    "device": "cpu",
+    "datasets": [
+      "wainject"
+    ]
+  },
+  "wildguard": {
+    "kind": "wildguard",
+    "device": "mps",
+    "datasets": [
+      "agentharm"
+    ]
+  },
+  "decider_parent_readout": {
+    "kind": "decider",
+    "checkpoint": "decider_parent",
+    "device": "mps",
+    "parent_control": true,
+    "local_path": "models/decider_parent_text",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ]
+  },
+  "nimble_parent_readout": {
+    "kind": "nimble_parent",
+    "checkpoint": "nimble_parent",
+    "device": "mlx_metal",
+    "parent_control": true,
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ],
+    "max_input_tokens": 262143
+  },
+  "glm53_flash": {
+    "kind": "hosted_judge",
+    "model": "glm-5.3-flash",
+    "parameters": {
+      "temperature": 1,
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "low",
+      "logprobs": true,
+      "top_logprobs": 20
+    },
+    "api_key_env": "HOSTED_JUDGE_API_KEY",
+    "base_url_env": "HOSTED_JUDGE_BASE_URL",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ]
+  },
+  "glm53": {
+    "kind": "hosted_judge",
+    "model": "glm-5.3",
+    "parameters": {
+      "temperature": 1,
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "low",
+      "logprobs": true,
+      "top_logprobs": 20
+    },
+    "api_key_env": "HOSTED_JUDGE_API_KEY",
+    "base_url_env": "HOSTED_JUDGE_BASE_URL",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ]
+  },
+  "deepseek41_flash": {
+    "kind": "hosted_judge",
+    "model": "deepseek-v4.1-flash",
+    "parameters": {
+      "temperature": 1,
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "low",
+      "logprobs": true,
+      "top_logprobs": 20
+    },
+    "api_key_env": "HOSTED_JUDGE_API_KEY",
+    "base_url_env": "HOSTED_JUDGE_BASE_URL",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ]
+  },
+  "kimi26": {
+    "kind": "hosted_judge",
+    "model": "moonshotai/kimi-k2.6",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ],
+    "parameters": {
+      "temperature": 1,
+      "max_tokens": 16384,
+      "reasoning": {
+        "effort": "low"
+      },
+      "logprobs": true,
+      "top_logprobs": 20,
+      "provider": {
+        "only": [
+          "CoreWeave"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true
+      }
+    }
+  },
+  "qwen38_27b": {
+    "kind": "hosted_judge",
+    "model": "qwen/qwen3.8-27b",
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ],
+    "parameters": {
+      "temperature": 1,
+      "max_tokens": 4096,
+      "reasoning": {
+        "effort": "low"
+      },
+      "logprobs": true,
+      "top_logprobs": 20,
+      "provider": {
+        "only": [
+          "Darkbloom"
+        ],
+        "allow_fallbacks": false
+      }
+    }
+  },
+  "gpt41_probability": {
+    "kind": "hosted_judge",
+    "model": "openai/gpt-4.1",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ],
+    "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+    "api_key_env": "OPENROUTER_API_KEY",
+    "parameters": {
+      "temperature": 0,
+      "max_tokens": 16,
+      "logprobs": true,
+      "top_logprobs": 20,
+      "provider": {
+        "order": [
+          "Azure"
+        ],
+        "require_parameters": false,
+        "allow_fallbacks": false
+      }
+    }
+  },
+  "qwen3_8b_probability": {
+    "kind": "hosted_judge",
+    "model": "qwen3-8b",
+    "datasets": [
+      "wainject",
+      "rjudge",
+      "agentharm"
+    ],
+    "endpoint": "https://dashscope-intl.aliyuncs.com/api/v1/services/aigc/text-generation/generation",
+    "api_key_env": "DASHSCOPE_API_KEY",
+    "native_dashscope": true,
+    "parameters": {
+      "temperature": 0,
+      "max_tokens": 16,
+      "logprobs": true,
+      "top_logprobs": 5,
+      "enable_thinking": false,
+      "result_format": "message"
+    }
+  }
+}

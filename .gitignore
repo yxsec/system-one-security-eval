@@ -1,0 +1,17 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*credentials*
+secrets/
+runs/
+backup/
+data/raw/
+models/
+paper/
+output/
+imagegen/
+results/regenerated_*.json

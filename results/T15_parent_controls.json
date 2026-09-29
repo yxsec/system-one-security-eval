@@ -1,0 +1,134 @@
+[
+  {
+    "dataset": "wainject",
+    "model": "decider",
+    "metric": "macro_f1",
+    "common_n": 1612,
+    "difference_left_minus_right": 0.02224474406632021,
+    "low": -0.003462858665323515,
+    "high": 0.10921232850226884,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "wainject",
+    "model": "decider",
+    "metric": "brier",
+    "common_n": 1612,
+    "difference_left_minus_right": -0.03156140718362285,
+    "low": -0.11849874857305841,
+    "high": 0.3236547756436788,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "wainject",
+    "model": "nimble",
+    "metric": "macro_f1",
+    "common_n": 1612,
+    "difference_left_minus_right": 0.1497832501489056,
+    "low": -0.10145116250844087,
+    "high": 0.36952435381505894,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "wainject",
+    "model": "nimble",
+    "metric": "brier",
+    "common_n": 1612,
+    "difference_left_minus_right": -0.01332896598494654,
+    "low": -0.197907520740964,
+    "high": 0.0343010448232047,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "rjudge",
+    "model": "decider",
+    "metric": "macro_f1",
+    "common_n": 236,
+    "difference_left_minus_right": -0.23552110922232966,
+    "low": -0.314179108591785,
+    "high": -0.15642657245650757,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "rjudge",
+    "model": "decider",
+    "metric": "brier",
+    "common_n": 236,
+    "difference_left_minus_right": 0.16480479199152542,
+    "low": 0.11609504774152543,
+    "high": 0.21537954727118644,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "rjudge",
+    "model": "nimble",
+    "metric": "macro_f1",
+    "common_n": 236,
+    "difference_left_minus_right": -0.07750335657643959,
+    "low": -0.13544015611731472,
+    "high": -0.022011333138250305,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "rjudge",
+    "model": "nimble",
+    "metric": "brier",
+    "common_n": 236,
+    "difference_left_minus_right": -0.05290104810646379,
+    "low": -0.08295527985742315,
+    "high": -0.02365074110951227,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "agentharm",
+    "model": "decider",
+    "metric": "macro_f1",
+    "common_n": 352,
+    "difference_left_minus_right": 0.35060968545520954,
+    "low": 0.2763995955092968,
+    "high": 0.4229266386746987,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "agentharm",
+    "model": "decider",
+    "metric": "brier",
+    "common_n": 352,
+    "difference_left_minus_right": -0.08978340295454545,
+    "low": -0.12854665995241474,
+    "high": -0.04819760366122166,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "agentharm",
+    "model": "nimble",
+    "metric": "macro_f1",
+    "common_n": 352,
+    "difference_left_minus_right": 0.06795088463772025,
+    "low": 0.027765403395784448,
+    "high": 0.10922041292008051,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  },
+  {
+    "dataset": "agentharm",
+    "model": "nimble",
+    "metric": "brier",
+    "common_n": 352,
+    "difference_left_minus_right": -0.048856241621235794,
+    "low": -0.08248725025476805,
+    "high": -0.017680055101306078,
+    "defined_replicates": 2000,
+    "total_replicates": 2000
+  }
+]

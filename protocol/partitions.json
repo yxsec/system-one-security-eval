@@ -1,0 +1,27 @@
+{
+  "seed": 20260924,
+  "allocation": "30% selection, 20% confirmation, remainder test within original label, after exposure quarantine",
+  "calibration_fit": "existing development records only; distinct from source selection/confirmation and test",
+  "membership": "data/partitions.jsonl.gz",
+  "agentharm_group_rule": "Original task ID shared across benign/harmful variants and augmentations",
+  "counts": {
+    "wainject": {
+      "development": 100,
+      "selection": 966,
+      "confirmation": 644,
+      "test": 1612
+    },
+    "rjudge": {
+      "development": 100,
+      "selection": 140,
+      "confirmation": 93,
+      "test": 236
+    },
+    "agentharm": {
+      "development": 64,
+      "selection": 0,
+      "confirmation": 0,
+      "test": 352
+    }
+  }
+}

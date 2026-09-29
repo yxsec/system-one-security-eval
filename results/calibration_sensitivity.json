@@ -1,0 +1,2995 @@
+{
+  "scope": "Post-hoc descriptive sensitivity on the original shared test populations, four typed components",
+  "new_inference": false,
+  "model_or_policy_fitting": false,
+  "reference": "The constant empirical test prevalence is a hindsight diagnostic reference, not a fitted deployment predictor.",
+  "quantile_rule": "Ten nominal quantile bins, deduplicated boundaries, with exact score ties retained in one bin. Occupied bins may be fewer than ten.",
+  "source_sha256": {
+    "data/predictions/primary_classification.jsonl.gz": "4168d71a4bd095cb1fc742b6ecf6e62ab25911e8f5a91c2d134e679a2019c6ac",
+    "results/heldout_current.json": "955f2b4d6ddcd08d2e71ea716e75a920d866ba6412c0789d92a7ab0f86d28ff3"
+  },
+  "independent_checks": 132,
+  "cells": [
+    {
+      "dataset": "wainject",
+      "model": "jev",
+      "n": 1612,
+      "unsafe_n": 279,
+      "unsafe_rate": 0.17307692307692307,
+      "mean_probability": 0.06854838709677419,
+      "signed_bias": -0.10452853598014888,
+      "brier": 0.09680781637717122,
+      "constant_prevalence_brier": 0.14312130177514792,
+      "brier_skill_vs_empirical_prevalence": 0.32359603234141865,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.1045285359801489,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 1465,
+              "mean_probability": 0.003911262798634802,
+              "unsafe_rate": 0.09692832764505119
+            },
+            {
+              "n": 32,
+              "mean_probability": 0.6653125,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 70,
+              "mean_probability": 0.9425714285714284,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 28,
+              "mean_probability": 0.3160714285714285,
+              "unsafe_rate": 0.75
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.5088235294117647,
+              "unsafe_rate": 0.8235294117647058
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.1045285359801489,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 1446,
+              "mean_probability": 0.0020470262793914214,
+              "unsafe_rate": 0.09197786998616875
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.7422222222222222,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.6352173913043477,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 58,
+              "mean_probability": 0.9579310344827585,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 19,
+              "mean_probability": 0.14578947368421052,
+              "unsafe_rate": 0.47368421052631576
+            },
+            {
+              "n": 19,
+              "mean_probability": 0.3442105263157894,
+              "unsafe_rate": 0.8947368421052632
+            },
+            {
+              "n": 12,
+              "mean_probability": 0.8683333333333332,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.2566666666666667,
+              "unsafe_rate": 0.4444444444444444
+            },
+            {
+              "n": 11,
+              "mean_probability": 0.5418181818181819,
+              "unsafe_rate": 0.9090909090909091
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.4483333333333333,
+              "unsafe_rate": 0.6666666666666666
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.10502481389578167,
+          "occupied_bins": 20,
+          "cells": [
+            {
+              "n": 1429,
+              "mean_probability": 0.0012666200139958021,
+              "unsafe_rate": 0.08817354793561931
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.7266666666666667,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.6219999999999999,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 38,
+              "mean_probability": 0.9807894736842104,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.1744444444444444,
+              "unsafe_rate": 0.5555555555555556
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.7733333333333334,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.31399999999999995,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.06764705882352944,
+              "unsafe_rate": 0.4117647058823529
+            },
+            {
+              "n": 20,
+              "mean_probability": 0.9145,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.6600000000000001,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.8233333333333333,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.27166666666666667,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.12000000000000002,
+              "unsafe_rate": 0.4
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.8833333333333333,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.37777777777777777,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.5825,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.5185714285714286,
+              "unsafe_rate": 0.8571428571428571
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.43,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.4666666666666666,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.22666666666666666,
+              "unsafe_rate": 0.3333333333333333
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.1045285359801489,
+          "occupied_bins": 2,
+          "cells": [
+            {
+              "n": 1450,
+              "mean_probability": 0.0023172413793103408,
+              "unsafe_rate": 0.09241379310344827
+            },
+            {
+              "n": 162,
+              "mean_probability": 0.6613580246913577,
+              "unsafe_rate": 0.8950617283950617
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "wainject",
+      "model": "laya",
+      "n": 1612,
+      "unsafe_n": 279,
+      "unsafe_rate": 0.17307692307692307,
+      "mean_probability": 0.2814375310173698,
+      "signed_bias": 0.10836060794044665,
+      "brier": 0.14656217403846153,
+      "constant_prevalence_brier": 0.14312130177514792,
+      "brier_skill_vs_empirical_prevalence": -0.0240416501291989,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.10836060794044658,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 770,
+              "mean_probability": 0.26823168831168837,
+              "unsafe_rate": 0.10909090909090909
+            },
+            {
+              "n": 574,
+              "mean_probability": 0.15051637630661996,
+              "unsafe_rate": 0.1445993031358885
+            },
+            {
+              "n": 153,
+              "mean_probability": 0.49761045751633975,
+              "unsafe_rate": 0.3202614379084967
+            },
+            {
+              "n": 92,
+              "mean_probability": 0.7078760869565217,
+              "unsafe_rate": 0.5760869565217391
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.8471086956521741,
+              "unsafe_rate": 0.43478260869565216
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.10836060794044657,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 566,
+              "mean_probability": 0.24189522968197874,
+              "unsafe_rate": 0.10954063604240283
+            },
+            {
+              "n": 66,
+              "mean_probability": 0.07913181818181816,
+              "unsafe_rate": 0.030303030303030304
+            },
+            {
+              "n": 508,
+              "mean_probability": 0.15979074803149595,
+              "unsafe_rate": 0.1594488188976378
+            },
+            {
+              "n": 80,
+              "mean_probability": 0.5462499999999999,
+              "unsafe_rate": 0.4
+            },
+            {
+              "n": 34,
+              "mean_probability": 0.6413382352941177,
+              "unsafe_rate": 0.4117647058823529
+            },
+            {
+              "n": 58,
+              "mean_probability": 0.7468810344827586,
+              "unsafe_rate": 0.6724137931034483
+            },
+            {
+              "n": 204,
+              "mean_probability": 0.3413024509803919,
+              "unsafe_rate": 0.10784313725490197
+            },
+            {
+              "n": 73,
+              "mean_probability": 0.44430684931506853,
+              "unsafe_rate": 0.2328767123287671
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.90686,
+              "unsafe_rate": 0.4
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.8305111111111111,
+              "unsafe_rate": 0.4444444444444444
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.1161602357320099,
+          "occupied_bins": 19,
+          "cells": [
+            {
+              "n": 348,
+              "mean_probability": 0.22341293103448262,
+              "unsafe_rate": 0.10057471264367816
+            },
+            {
+              "n": 63,
+              "mean_probability": 0.08075555555555552,
+              "unsafe_rate": 0.031746031746031744
+            },
+            {
+              "n": 326,
+              "mean_probability": 0.17625828220858897,
+              "unsafe_rate": 0.15644171779141106
+            },
+            {
+              "n": 42,
+              "mean_probability": 0.5229071428571428,
+              "unsafe_rate": 0.40476190476190477
+            },
+            {
+              "n": 20,
+              "mean_probability": 0.6206449999999999,
+              "unsafe_rate": 0.35
+            },
+            {
+              "n": 182,
+              "mean_probability": 0.13029395604395608,
+              "unsafe_rate": 0.16483516483516483
+            },
+            {
+              "n": 218,
+              "mean_probability": 0.27139908256880735,
+              "unsafe_rate": 0.12385321100917432
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.7725545454545455,
+              "unsafe_rate": 0.6818181818181818
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.7311916666666667,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 77,
+              "mean_probability": 0.37136103896103906,
+              "unsafe_rate": 0.22077922077922077
+            },
+            {
+              "n": 14,
+              "mean_probability": 0.6708999999999999,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 40,
+              "mean_probability": 0.4231225,
+              "unsafe_rate": 0.225
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.90686,
+              "unsafe_rate": 0.4
+            },
+            {
+              "n": 127,
+              "mean_probability": 0.3230779527559057,
+              "unsafe_rate": 0.03937007874015748
+            },
+            {
+              "n": 33,
+              "mean_probability": 0.46998484848484856,
+              "unsafe_rate": 0.24242424242424243
+            },
+            {
+              "n": 38,
+              "mean_probability": 0.5720499999999997,
+              "unsafe_rate": 0.39473684210526316
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.86685,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.045033333333333335,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 14,
+              "mean_probability": 0.8201285714285713,
+              "unsafe_rate": 0.42857142857142855
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.11462834987593053,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 161,
+              "mean_probability": 0.1989173913043478,
+              "unsafe_rate": 0.12422360248447205
+            },
+            {
+              "n": 162,
+              "mean_probability": 0.10310123456790128,
+              "unsafe_rate": 0.1111111111111111
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.17606708074534164,
+              "unsafe_rate": 0.18012422360248448
+            },
+            {
+              "n": 160,
+              "mean_probability": 0.21934812500000006,
+              "unsafe_rate": 0.09375
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.4369242236024845,
+              "unsafe_rate": 0.2732919254658385
+            },
+            {
+              "n": 162,
+              "mean_probability": 0.6865518518518517,
+              "unsafe_rate": 0.5061728395061729
+            },
+            {
+              "n": 162,
+              "mean_probability": 0.24383148148148145,
+              "unsafe_rate": 0.09876543209876543
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.1484409937888199,
+              "unsafe_rate": 0.16770186335403728
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.27433043478260877,
+              "unsafe_rate": 0.11180124223602485
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.3253018633540374,
+              "unsafe_rate": 0.062111801242236024
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "wainject",
+      "model": "decider",
+      "n": 1612,
+      "unsafe_n": 279,
+      "unsafe_rate": 0.17307692307692307,
+      "mean_probability": 0.030064578163771713,
+      "signed_bias": -0.14301234491315137,
+      "brier": 0.14752049715260546,
+      "constant_prevalence_brier": 0.14312130177514792,
+      "brier_skill_vs_empirical_prevalence": -0.030737530492623177,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.14301234491315137,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 1587,
+              "mean_probability": 0.022188090737240075,
+              "unsafe_rate": 0.16068052930056712
+            },
+            {
+              "n": 11,
+              "mean_probability": 0.5022363636363637,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.29081999999999997,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.674,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.8809,
+              "unsafe_rate": 1.0
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.14301234491315137,
+          "occupied_bins": 9,
+          "cells": [
+            {
+              "n": 1544,
+              "mean_probability": 0.018766386010362675,
+              "unsafe_rate": 0.14183937823834197
+            },
+            {
+              "n": 43,
+              "mean_probability": 0.14505116279069766,
+              "unsafe_rate": 0.8372093023255814
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.5572799999999999,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.34703333333333336,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.62708,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.45636666666666664,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.8809,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.2065,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.7522000000000001,
+              "unsafe_rate": 1.0
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.14301234491315137,
+          "occupied_bins": 16,
+          "cells": [
+            {
+              "n": 1459,
+              "mean_probability": 0.01584112405757368,
+              "unsafe_rate": 0.11034955448937629
+            },
+            {
+              "n": 85,
+              "mean_probability": 0.0689776470588235,
+              "unsafe_rate": 0.6823529411764706
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.16864347826086956,
+              "unsafe_rate": 0.9130434782608695
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.5285,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 20,
+              "mean_probability": 0.11791999999999998,
+              "unsafe_rate": 0.75
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.3274,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.620675,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.46402,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.8809,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.6527,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.2065,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.3863,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.7739,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.4181,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.5764666666666667,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.7088,
+              "unsafe_rate": 1.0
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.14301234491315137,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 163,
+              "mean_probability": 0.018301840490797548,
+              "unsafe_rate": 0.04294478527607362
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.010472670807453417,
+              "unsafe_rate": 0.09937888198757763
+            },
+            {
+              "n": 164,
+              "mean_probability": 0.013587804878048787,
+              "unsafe_rate": 0.042682926829268296
+            },
+            {
+              "n": 164,
+              "mean_probability": 0.015757317073170733,
+              "unsafe_rate": 0.03048780487804878
+            },
+            {
+              "n": 164,
+              "mean_probability": 0.03262926829268294,
+              "unsafe_rate": 0.31097560975609756
+            },
+            {
+              "n": 162,
+              "mean_probability": 0.159183950617284,
+              "unsafe_rate": 0.7345679012345679
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.022186335403726713,
+              "unsafe_rate": 0.07453416149068323
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.0065652173913043465,
+              "unsafe_rate": 0.17391304347826086
+            },
+            {
+              "n": 153,
+              "mean_probability": 0.011936601307189548,
+              "unsafe_rate": 0.026143790849673203
+            },
+            {
+              "n": 159,
+              "mean_probability": 0.008728930817610059,
+              "unsafe_rate": 0.18867924528301888
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "wainject",
+      "model": "nimble",
+      "n": 1612,
+      "unsafe_n": 279,
+      "unsafe_rate": 0.17307692307692307,
+      "mean_probability": 0.20868669177819202,
+      "signed_bias": 0.03560976870126893,
+      "brier": 0.10276961874836744,
+      "constant_prevalence_brier": 0.14312130177514792,
+      "brier_skill_vs_empirical_prevalence": 0.281940441613474,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.0522443728808027,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 1158,
+              "mean_probability": 0.1101970008006625,
+              "unsafe_rate": 0.08376511226252159
+            },
+            {
+              "n": 105,
+              "mean_probability": 0.6818334193456741,
+              "unsafe_rate": 0.8095238095238095
+            },
+            {
+              "n": 121,
+              "mean_probability": 0.5124312294416191,
+              "unsafe_rate": 0.5041322314049587
+            },
+            {
+              "n": 203,
+              "mean_probability": 0.26617628115738556,
+              "unsafe_rate": 0.07881773399014778
+            },
+            {
+              "n": 25,
+              "mean_probability": 0.8465738940238953,
+              "unsafe_rate": 0.8
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.08708095912666755,
+          "occupied_bins": 9,
+          "cells": [
+            {
+              "n": 619,
+              "mean_probability": 0.13958883151917542,
+              "unsafe_rate": 0.05492730210016155
+            },
+            {
+              "n": 539,
+              "mean_probability": 0.07644274622782485,
+              "unsafe_rate": 0.11688311688311688
+            },
+            {
+              "n": 64,
+              "mean_probability": 0.6478637866675854,
+              "unsafe_rate": 0.796875
+            },
+            {
+              "n": 64,
+              "mean_probability": 0.5581104885786772,
+              "unsafe_rate": 0.65625
+            },
+            {
+              "n": 147,
+              "mean_probability": 0.23720142711587502,
+              "unsafe_rate": 0.05442176870748299
+            },
+            {
+              "n": 25,
+              "mean_probability": 0.8465738940238953,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 57,
+              "mean_probability": 0.46114223672632587,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 41,
+              "mean_probability": 0.7348591874285442,
+              "unsafe_rate": 0.8292682926829268
+            },
+            {
+              "n": 56,
+              "mean_probability": 0.3422352730163506,
+              "unsafe_rate": 0.14285714285714285
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.08780878663719366,
+          "occupied_bins": 18,
+          "cells": [
+            {
+              "n": 399,
+              "mean_probability": 0.1223082936982762,
+              "unsafe_rate": 0.06516290726817042
+            },
+            {
+              "n": 527,
+              "mean_probability": 0.07711664278350021,
+              "unsafe_rate": 0.11764705882352941
+            },
+            {
+              "n": 220,
+              "mean_probability": 0.17092944329435175,
+              "unsafe_rate": 0.03636363636363636
+            },
+            {
+              "n": 32,
+              "mean_probability": 0.6723799612373114,
+              "unsafe_rate": 0.90625
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.5244428738951683,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 47,
+              "mean_probability": 0.27176921164735834,
+              "unsafe_rate": 0.06382978723404255
+            },
+            {
+              "n": 40,
+              "mean_probability": 0.5783110573887825,
+              "unsafe_rate": 0.75
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.8321988463401795,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 38,
+              "mean_probability": 0.4786986794910933,
+              "unsafe_rate": 0.39473684210526316
+            },
+            {
+              "n": 29,
+              "mean_probability": 0.7184447748907681,
+              "unsafe_rate": 0.8275862068965517
+            },
+            {
+              "n": 19,
+              "mean_probability": 0.426029351196791,
+              "unsafe_rate": 0.21052631578947367
+            },
+            {
+              "n": 12,
+              "mean_probability": 0.04684745582441489,
+              "unsafe_rate": 0.08333333333333333
+            },
+            {
+              "n": 21,
+              "mean_probability": 0.3756645435378665,
+              "unsafe_rate": 0.23809523809523808
+            },
+            {
+              "n": 32,
+              "mean_probability": 0.6233476120978594,
+              "unsafe_rate": 0.6875
+            },
+            {
+              "n": 100,
+              "mean_probability": 0.22095456838607788,
+              "unsafe_rate": 0.05
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.3221777107034411,
+              "unsafe_rate": 0.08571428571428572
+            },
+            {
+              "n": 12,
+              "mean_probability": 0.774527351061503,
+              "unsafe_rate": 0.8333333333333334
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.868136465549469,
+              "unsafe_rate": 0.8
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.09004603767023416,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 161,
+              "mean_probability": 0.11921532410457268,
+              "unsafe_rate": 0.08074534161490683
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.08786182859854669,
+              "unsafe_rate": 0.08695652173913043
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.10208895126855151,
+              "unsafe_rate": 0.055900621118012424
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.07521692751357274,
+              "unsafe_rate": 0.13664596273291926
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.16973298362323216,
+              "unsafe_rate": 0.024844720496894408
+            },
+            {
+              "n": 162,
+              "mean_probability": 0.6877320438255499,
+              "unsafe_rate": 0.8024691358024691
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.14246222793315508,
+              "unsafe_rate": 0.037267080745341616
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.41658308028434377,
+              "unsafe_rate": 0.2732919254658385
+            },
+            {
+              "n": 161,
+              "mean_probability": 0.22465547956294896,
+              "unsafe_rate": 0.07453416149068323
+            },
+            {
+              "n": 162,
+              "mean_probability": 0.059270683836973745,
+              "unsafe_rate": 0.15432098765432098
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "rjudge",
+      "model": "jev",
+      "n": 236,
+      "unsafe_n": 125,
+      "unsafe_rate": 0.5296610169491526,
+      "mean_probability": 0.6461440677966102,
+      "signed_bias": 0.11648305084745762,
+      "brier": 0.10256059322033896,
+      "constant_prevalence_brier": 0.2491202240735421,
+      "brier_skill_vs_empirical_prevalence": 0.5883088432432433,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.128940677966102,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 34,
+              "mean_probability": 0.4894117647058824,
+              "unsafe_rate": 0.08823529411764706
+            },
+            {
+              "n": 108,
+              "mean_probability": 0.9678703703703697,
+              "unsafe_rate": 0.9814814814814815
+            },
+            {
+              "n": 28,
+              "mean_probability": 0.6764285714285714,
+              "unsafe_rate": 0.39285714285714285
+            },
+            {
+              "n": 33,
+              "mean_probability": 0.09151515151515154,
+              "unsafe_rate": 0.030303030303030304
+            },
+            {
+              "n": 33,
+              "mean_probability": 0.2836363636363637,
+              "unsafe_rate": 0.12121212121212122
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.13741525423728845,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 15,
+              "mean_probability": 0.546,
+              "unsafe_rate": 0.06666666666666667
+            },
+            {
+              "n": 99,
+              "mean_probability": 0.9788888888888881,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.6449999999999999,
+              "unsafe_rate": 0.2777777777777778
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.8466666666666666,
+              "unsafe_rate": 0.7777777777777778
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.14117647058823532,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 19,
+              "mean_probability": 0.4447368421052632,
+              "unsafe_rate": 0.10526315789473684
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.3393333333333334,
+              "unsafe_rate": 0.13333333333333333
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.2372222222222223,
+              "unsafe_rate": 0.1111111111111111
+            },
+            {
+              "n": 16,
+              "mean_probability": 0.03875000000000001,
+              "unsafe_rate": 0.0625
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.733,
+              "unsafe_rate": 0.6
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.14504237288135627,
+          "occupied_bins": 20,
+          "cells": [
+            {
+              "n": 9,
+              "mean_probability": 0.5655555555555556,
+              "unsafe_rate": 0.1111111111111111
+            },
+            {
+              "n": 90,
+              "mean_probability": 0.9848888888888879,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.6699999999999999,
+              "unsafe_rate": 0.2222222222222222
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.5166666666666667,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.82,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.6200000000000001,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.12222222222222223,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.9188888888888889,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.4670000000000001,
+              "unsafe_rate": 0.1
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.3157142857142857,
+              "unsafe_rate": 0.14285714285714285
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.215,
+              "unsafe_rate": 0.1
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.88,
+              "unsafe_rate": 0.75
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.42000000000000004,
+              "unsafe_rate": 0.1111111111111111
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.018,
+              "unsafe_rate": 0.1
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.36000000000000004,
+              "unsafe_rate": 0.125
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.72375,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.16249999999999998,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.265,
+              "unsafe_rate": 0.125
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.07333333333333333,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.77,
+              "unsafe_rate": 1.0
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.13182203389830496,
+          "occupied_bins": 9,
+          "cells": [
+            {
+              "n": 21,
+              "mean_probability": 0.47904761904761917,
+              "unsafe_rate": 0.047619047619047616
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.9530434782608698,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 56,
+              "mean_probability": 0.9930357142857147,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 26,
+              "mean_probability": 0.6211538461538463,
+              "unsafe_rate": 0.23076923076923078
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.8031818181818181,
+              "unsafe_rate": 0.7272727272727273
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.9800000000000002,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.059090909090909104,
+              "unsafe_rate": 0.045454545454545456
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.34333333333333343,
+              "unsafe_rate": 0.16666666666666666
+            },
+            {
+              "n": 25,
+              "mean_probability": 0.19519999999999998,
+              "unsafe_rate": 0.04
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "rjudge",
+      "model": "laya",
+      "n": 236,
+      "unsafe_n": 125,
+      "unsafe_rate": 0.5296610169491526,
+      "mean_probability": 0.41092711864406783,
+      "signed_bias": -0.11873389830508475,
+      "brier": 0.27230646220338983,
+      "constant_prevalence_brier": 0.2491202240735421,
+      "brier_skill_vs_empirical_prevalence": -0.09307248424360348,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.16662203389830513,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 127,
+              "mean_probability": 0.33106220472440934,
+              "unsafe_rate": 0.5118110236220472
+            },
+            {
+              "n": 93,
+              "mean_probability": 0.48691505376344085,
+              "unsafe_rate": 0.6021505376344086
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.8337,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 13,
+              "mean_probability": 0.6482923076923076,
+              "unsafe_rate": 0.3076923076923077
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.19465,
+              "unsafe_rate": 0.0
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.16662203389830507,
+          "occupied_bins": 7,
+          "cells": [
+            {
+              "n": 93,
+              "mean_probability": 0.35298172043010756,
+              "unsafe_rate": 0.5376344086021505
+            },
+            {
+              "n": 34,
+              "mean_probability": 0.2711058823529411,
+              "unsafe_rate": 0.4411764705882353
+            },
+            {
+              "n": 40,
+              "mean_probability": 0.5448,
+              "unsafe_rate": 0.675
+            },
+            {
+              "n": 53,
+              "mean_probability": 0.44322830188679246,
+              "unsafe_rate": 0.5471698113207547
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.8337,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 13,
+              "mean_probability": 0.6482923076923076,
+              "unsafe_rate": 0.3076923076923077
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.19465,
+              "unsafe_rate": 0.0
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.16662203389830507,
+          "occupied_bins": 12,
+          "cells": [
+            {
+              "n": 44,
+              "mean_probability": 0.32449772727272735,
+              "unsafe_rate": 0.5909090909090909
+            },
+            {
+              "n": 28,
+              "mean_probability": 0.2780035714285714,
+              "unsafe_rate": 0.4642857142857143
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.5202545454545452,
+              "unsafe_rate": 0.7272727272727273
+            },
+            {
+              "n": 29,
+              "mean_probability": 0.4239448275862069,
+              "unsafe_rate": 0.5517241379310345
+            },
+            {
+              "n": 49,
+              "mean_probability": 0.37855918367346936,
+              "unsafe_rate": 0.4897959183673469
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.4665291666666667,
+              "unsafe_rate": 0.5416666666666666
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.2389166666666667,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.5748000000000001,
+              "unsafe_rate": 0.6111111111111112
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.8337,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.6768333333333333,
+              "unsafe_rate": 0.16666666666666666
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.19465,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.6238285714285714,
+              "unsafe_rate": 0.42857142857142855
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.1620983050847457,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 24,
+              "mean_probability": 0.3247416666666667,
+              "unsafe_rate": 0.5416666666666666
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.2984304347826087,
+              "unsafe_rate": 0.5652173913043478
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.5383833333333333,
+              "unsafe_rate": 0.75
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.25522916666666673,
+              "unsafe_rate": 0.4166666666666667
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.4389541666666665,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.3544826086956521,
+              "unsafe_rate": 0.391304347826087
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.40320000000000006,
+              "unsafe_rate": 0.4782608695652174
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.3809375000000001,
+              "unsafe_rate": 0.625
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.4805782608695653,
+              "unsafe_rate": 0.6086956521739131
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.6298750000000001,
+              "unsafe_rate": 0.4166666666666667
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "rjudge",
+      "model": "decider",
+      "n": 236,
+      "unsafe_n": 125,
+      "unsafe_rate": 0.5296610169491526,
+      "mean_probability": 0.1954478813559322,
+      "signed_bias": -0.33421313559322036,
+      "brier": 0.4226838376694915,
+      "constant_prevalence_brier": 0.2491202240735421,
+      "brier_skill_vs_empirical_prevalence": -0.6967062358803604,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.43801313559322036,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 175,
+              "mean_probability": 0.07862685714285715,
+              "unsafe_rate": 0.5142857142857142
+            },
+            {
+              "n": 25,
+              "mean_probability": 0.284704,
+              "unsafe_rate": 0.88
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.7045533333333334,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.49892000000000003,
+              "unsafe_rate": 0.4
+            },
+            {
+              "n": 11,
+              "mean_probability": 0.880990909090909,
+              "unsafe_rate": 0.36363636363636365
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.4401656779661017,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 47,
+              "mean_probability": 0.14208936170212766,
+              "unsafe_rate": 0.6595744680851063
+            },
+            {
+              "n": 128,
+              "mean_probability": 0.05532421875,
+              "unsafe_rate": 0.4609375
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.34693999999999997,
+              "unsafe_rate": 0.9
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.7467874999999998,
+              "unsafe_rate": 0.375
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.2432133333333333,
+              "unsafe_rate": 0.8666666666666667
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.5492,
+              "unsafe_rate": 0.6
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.44864,
+              "unsafe_rate": 0.2
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.6562857142857144,
+              "unsafe_rate": 0.2857142857142857
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.8396285714285714,
+              "unsafe_rate": 0.2857142857142857
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.953375,
+              "unsafe_rate": 0.5
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.442075,
+          "occupied_bins": 20,
+          "cells": [
+            {
+              "n": 29,
+              "mean_probability": 0.1219103448275862,
+              "unsafe_rate": 0.6206896551724138
+            },
+            {
+              "n": 59,
+              "mean_probability": 0.03282372881355931,
+              "unsafe_rate": 0.2711864406779661
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.31938,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 69,
+              "mean_probability": 0.07456376811594205,
+              "unsafe_rate": 0.6231884057971014
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.1746,
+              "unsafe_rate": 0.7222222222222222
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.7758666666666666,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.27666666666666667,
+              "unsafe_rate": 0.8333333333333334
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.2209111111111111,
+              "unsafe_rate": 0.8888888888888888
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.5259999999999999,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.46799999999999997,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.6291333333333333,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.8639666666666668,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.72934,
+              "unsafe_rate": 0.2
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.67665,
+              "unsafe_rate": 0.25
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.5840000000000001,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.9354,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.821375,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.9713499999999999,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.4196,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.3745,
+              "unsafe_rate": 0.8
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.42755974576271183,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 22,
+              "mean_probability": 0.10433181818181816,
+              "unsafe_rate": 0.6818181818181818
+            },
+            {
+              "n": 25,
+              "mean_probability": 0.1392,
+              "unsafe_rate": 0.6
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.035252173913043486,
+              "unsafe_rate": 0.43478260869565216
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.4287125,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.06648260869565217,
+              "unsafe_rate": 0.5217391304347826
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.05002916666666667,
+              "unsafe_rate": 0.625
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.7922875000000001,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.023604166666666666,
+              "unsafe_rate": 0.041666666666666664
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.21450869565217384,
+              "unsafe_rate": 0.782608695652174
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.08356666666666666,
+              "unsafe_rate": 0.625
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "rjudge",
+      "model": "nimble",
+      "n": 236,
+      "unsafe_n": 125,
+      "unsafe_rate": 0.5296610169491526,
+      "mean_probability": 0.6981050161550105,
+      "signed_bias": 0.168443999205858,
+      "brier": 0.32028153054958447,
+      "constant_prevalence_brier": 0.2491202240735421,
+      "brier_skill_vs_empirical_prevalence": -0.28565045949475,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.2521601893576019,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 126,
+              "mean_probability": 0.7271123817042698,
+              "unsafe_rate": 0.5158730158730159
+            },
+            {
+              "n": 56,
+              "mean_probability": 0.857413109924112,
+              "unsafe_rate": 0.44642857142857145
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.3044349759817123,
+              "unsafe_rate": 0.6
+            },
+            {
+              "n": 42,
+              "mean_probability": 0.5193396033275695,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.13243823125958443,
+              "unsafe_rate": 0.5
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.252160189357602,
+          "occupied_bins": 9,
+          "cells": [
+            {
+              "n": 37,
+              "mean_probability": 0.6588697884533856,
+              "unsafe_rate": 0.4594594594594595
+            },
+            {
+              "n": 47,
+              "mean_probability": 0.8445233182704195,
+              "unsafe_rate": 0.40425531914893614
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.26276269058386487,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 89,
+              "mean_probability": 0.7554828979995813,
+              "unsafe_rate": 0.5393258426966292
+            },
+            {
+              "n": 26,
+              "mean_probability": 0.5541311341982621,
+              "unsafe_rate": 0.5769230769230769
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.9247264663378397,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 16,
+              "mean_probability": 0.462803365662694,
+              "unsafe_rate": 0.8125
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.3669434040784836,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.13243823125958443,
+              "unsafe_rate": 0.5
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.26520985633261124,
+          "occupied_bins": 18,
+          "cells": [
+            {
+              "n": 20,
+              "mean_probability": 0.679473477602005,
+              "unsafe_rate": 0.4
+            },
+            {
+              "n": 25,
+              "mean_probability": 0.8207411694526673,
+              "unsafe_rate": 0.48
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.8715484873815016,
+              "unsafe_rate": 0.3181818181818182
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.21420933306217194,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 41,
+              "mean_probability": 0.7301856439288069,
+              "unsafe_rate": 0.4878048780487805
+            },
+            {
+              "n": 14,
+              "mean_probability": 0.5288988351821899,
+              "unsafe_rate": 0.6428571428571429
+            },
+            {
+              "n": 12,
+              "mean_probability": 0.5835688163836797,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 48,
+              "mean_probability": 0.7770909691850344,
+              "unsafe_rate": 0.5833333333333334
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.915878985609327,
+              "unsafe_rate": 0.5714285714285714
+            },
+            {
+              "n": 11,
+              "mean_probability": 0.4801063889806921,
+              "unsafe_rate": 0.7272727272727273
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.6346301541608923,
+              "unsafe_rate": 0.5294117647058824
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.9556926488876343,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.3738943636417389,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.4247367143630981,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.2870393693447113,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.10232967883348465,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.34609052538871765,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 1,
+              "mean_probability": 0.1625467836856842,
+              "unsafe_rate": 1.0
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.2534762386990301,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 23,
+              "mean_probability": 0.6825420830560767,
+              "unsafe_rate": 0.391304347826087
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.797167622524759,
+              "unsafe_rate": 0.5217391304347826
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.8360786537329356,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.3645618548616767,
+              "unsafe_rate": 0.7083333333333334
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.7248652254541715,
+              "unsafe_rate": 0.4583333333333333
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.5311613575271938,
+              "unsafe_rate": 0.6086956521739131
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.8961556479334831,
+              "unsafe_rate": 0.375
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.7498549222946167,
+              "unsafe_rate": 0.5652173913043478
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.7746752724051476,
+              "unsafe_rate": 0.625
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.6226669351259867,
+              "unsafe_rate": 0.5416666666666666
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "agentharm",
+      "model": "jev",
+      "n": 352,
+      "unsafe_n": 176,
+      "unsafe_rate": 0.5,
+      "mean_probability": 0.6046590909090909,
+      "signed_bias": 0.10465909090909092,
+      "brier": 0.12239261363636364,
+      "constant_prevalence_brier": 0.25,
+      "brier_skill_vs_empirical_prevalence": 0.5104295454545454,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.11892045454545444,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 100,
+              "mean_probability": 0.05489999999999997,
+              "unsafe_rate": 0.08
+            },
+            {
+              "n": 178,
+              "mean_probability": 0.9812359550561796,
+              "unsafe_rate": 0.8764044943820225
+            },
+            {
+              "n": 39,
+              "mean_probability": 0.28820512820512834,
+              "unsafe_rate": 0.07692307692307693
+            },
+            {
+              "n": 20,
+              "mean_probability": 0.708,
+              "unsafe_rate": 0.3
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.48600000000000004,
+              "unsafe_rate": 0.2
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.12795454545454527,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 25,
+              "mean_probability": 0.1436,
+              "unsafe_rate": 0.08
+            },
+            {
+              "n": 170,
+              "mean_probability": 0.9874117647058819,
+              "unsafe_rate": 0.888235294117647
+            },
+            {
+              "n": 75,
+              "mean_probability": 0.02533333333333334,
+              "unsafe_rate": 0.08
+            },
+            {
+              "n": 21,
+              "mean_probability": 0.3295238095238095,
+              "unsafe_rate": 0.09523809523809523
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.8500000000000001,
+              "unsafe_rate": 0.625
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.24000000000000002,
+              "unsafe_rate": 0.05555555555555555
+            },
+            {
+              "n": 12,
+              "mean_probability": 0.755,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.6375,
+              "unsafe_rate": 0.25
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.5499999999999999,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 9,
+              "mean_probability": 0.44333333333333325,
+              "unsafe_rate": 0.3333333333333333
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.1299999999999998,
+          "occupied_bins": 20,
+          "cells": [
+            {
+              "n": 14,
+              "mean_probability": 0.16571428571428568,
+              "unsafe_rate": 0.07142857142857142
+            },
+            {
+              "n": 155,
+              "mean_probability": 0.9936774193548382,
+              "unsafe_rate": 0.9354838709677419
+            },
+            {
+              "n": 57,
+              "mean_probability": 0.011578947368421057,
+              "unsafe_rate": 0.07017543859649122
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.31882352941176473,
+              "unsafe_rate": 0.058823529411764705
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.06888888888888889,
+              "unsafe_rate": 0.1111111111111111
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.86,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.9226666666666665,
+              "unsafe_rate": 0.4
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.26625,
+              "unsafe_rate": 0.125
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.76875,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.6575,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.219,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 11,
+              "mean_probability": 0.11545454545454548,
+              "unsafe_rate": 0.09090909090909091
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.57,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.48,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.375,
+              "unsafe_rate": 0.25
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.82,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.6175,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.51,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.425,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.7275,
+              "unsafe_rate": 0.0
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.13119318181818185,
+          "occupied_bins": 9,
+          "cells": [
+            {
+              "n": 37,
+              "mean_probability": 0.14027027027027034,
+              "unsafe_rate": 0.05405405405405406
+            },
+            {
+              "n": 27,
+              "mean_probability": 0.9899999999999994,
+              "unsafe_rate": 0.9259259259259259
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.0,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.3031428571428573,
+              "unsafe_rate": 0.08571428571428572
+            },
+            {
+              "n": 44,
+              "mean_probability": 0.030227272727272745,
+              "unsafe_rate": 0.13636363636363635
+            },
+            {
+              "n": 102,
+              "mean_probability": 1.0,
+              "unsafe_rate": 0.9803921568627451
+            },
+            {
+              "n": 32,
+              "mean_probability": 0.9246875,
+              "unsafe_rate": 0.53125
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.9800000000000003,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.6302777777777778,
+              "unsafe_rate": 0.3055555555555556
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "agentharm",
+      "model": "laya",
+      "n": 352,
+      "unsafe_n": 176,
+      "unsafe_rate": 0.5,
+      "mean_probability": 0.4545707386363636,
+      "signed_bias": -0.04542926136363636,
+      "brier": 0.1761499365625,
+      "constant_prevalence_brier": 0.25,
+      "brier_skill_vs_empirical_prevalence": 0.29540025375,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.07185369318181835,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 108,
+              "mean_probability": 0.2961564814814815,
+              "unsafe_rate": 0.26851851851851855
+            },
+            {
+              "n": 91,
+              "mean_probability": 0.4988835164835162,
+              "unsafe_rate": 0.5934065934065934
+            },
+            {
+              "n": 51,
+              "mean_probability": 0.15030980392156867,
+              "unsafe_rate": 0.11764705882352941
+            },
+            {
+              "n": 79,
+              "mean_probability": 0.6951936708860756,
+              "unsafe_rate": 0.8227848101265823
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.8712826086956522,
+              "unsafe_rate": 0.9565217391304348
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.07185369318181821,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 60,
+              "mean_probability": 0.24945500000000004,
+              "unsafe_rate": 0.23333333333333334
+            },
+            {
+              "n": 44,
+              "mean_probability": 0.5534522727272727,
+              "unsafe_rate": 0.6136363636363636
+            },
+            {
+              "n": 48,
+              "mean_probability": 0.15488125000000005,
+              "unsafe_rate": 0.125
+            },
+            {
+              "n": 48,
+              "mean_probability": 0.3545333333333333,
+              "unsafe_rate": 0.3125
+            },
+            {
+              "n": 47,
+              "mean_probability": 0.44779787234042556,
+              "unsafe_rate": 0.574468085106383
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.7477861111111109,
+              "unsafe_rate": 0.8888888888888888
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.94322,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 43,
+              "mean_probability": 0.6511627906976745,
+              "unsafe_rate": 0.7674418604651163
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.8513000000000002,
+              "unsafe_rate": 0.9444444444444444
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.07716666666666668,
+              "unsafe_rate": 0.0
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.0846252840909091,
+          "occupied_bins": 19,
+          "cells": [
+            {
+              "n": 28,
+              "mean_probability": 0.27665357142857144,
+              "unsafe_rate": 0.32142857142857145
+            },
+            {
+              "n": 27,
+              "mean_probability": 0.5756851851851853,
+              "unsafe_rate": 0.7037037037037037
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.13044705882352942,
+              "unsafe_rate": 0.11764705882352941
+            },
+            {
+              "n": 30,
+              "mean_probability": 0.3734433333333333,
+              "unsafe_rate": 0.3
+            },
+            {
+              "n": 31,
+              "mean_probability": 0.16828064516129035,
+              "unsafe_rate": 0.12903225806451613
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.4704708333333332,
+              "unsafe_rate": 0.7083333333333334
+            },
+            {
+              "n": 32,
+              "mean_probability": 0.22565625000000009,
+              "unsafe_rate": 0.15625
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.7677611111111111,
+              "unsafe_rate": 0.8888888888888888
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.9244333333333333,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.3230166666666666,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.6224545454545455,
+              "unsafe_rate": 0.7272727272727273
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.7278111111111112,
+              "unsafe_rate": 0.8888888888888888
+            },
+            {
+              "n": 23,
+              "mean_probability": 0.42413913043478263,
+              "unsafe_rate": 0.43478260869565216
+            },
+            {
+              "n": 21,
+              "mean_probability": 0.6812380952380952,
+              "unsafe_rate": 0.8095238095238095
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.5181411764705883,
+              "unsafe_rate": 0.47058823529411764
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.83192,
+              "unsafe_rate": 0.9
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.875525,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.9714,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.07716666666666668,
+              "unsafe_rate": 0.0
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.08873267045454546,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 34,
+              "mean_probability": 0.3304470588235293,
+              "unsafe_rate": 0.3235294117647059
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.5555114285714287,
+              "unsafe_rate": 0.5714285714285714
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.13753055555555557,
+              "unsafe_rate": 0.08333333333333333
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.39925555555555553,
+              "unsafe_rate": 0.3333333333333333
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.20176857142857146,
+              "unsafe_rate": 0.11428571428571428
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.47040857142857156,
+              "unsafe_rate": 0.6285714285714286
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.26115142857142853,
+              "unsafe_rate": 0.37142857142857144
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.8360500000000001,
+              "unsafe_rate": 0.9166666666666666
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.6313857142857141,
+              "unsafe_rate": 0.7714285714285715
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.7183914285714285,
+              "unsafe_rate": 0.8857142857142857
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "agentharm",
+      "model": "decider",
+      "n": 352,
+      "unsafe_n": 176,
+      "unsafe_rate": 0.5,
+      "mean_probability": 0.3272383522727273,
+      "signed_bias": -0.17276164772727273,
+      "brier": 0.15321518184659091,
+      "constant_prevalence_brier": 0.25,
+      "brier_skill_vs_empirical_prevalence": 0.38713927261363634,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.17276164772727268,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 209,
+              "mean_probability": 0.05787751196172251,
+              "unsafe_rate": 0.20095693779904306
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.7093888888888891,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.4830291666666668,
+              "unsafe_rate": 0.7916666666666666
+            },
+            {
+              "n": 77,
+              "mean_probability": 0.921761038961039,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 24,
+              "mean_probability": 0.3230916666666667,
+              "unsafe_rate": 0.8333333333333334
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.17276164772727282,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 174,
+              "mean_probability": 0.04107298850574713,
+              "unsafe_rate": 0.14942528735632185
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.640825,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.14142,
+              "unsafe_rate": 0.45714285714285713
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.54536,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 50,
+              "mean_probability": 0.9562799999999995,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.35593529411764707,
+              "unsafe_rate": 0.8823529411764706
+            },
+            {
+              "n": 27,
+              "mean_probability": 0.8578370370370371,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 14,
+              "mean_probability": 0.43850714285714293,
+              "unsafe_rate": 0.7857142857142857
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.7642399999999999,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.24332857142857142,
+              "unsafe_rate": 0.7142857142857143
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.17276164772727276,
+          "occupied_bins": 20,
+          "cells": [
+            {
+              "n": 53,
+              "mean_probability": 0.07154528301886795,
+              "unsafe_rate": 0.22641509433962265
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.6657000000000001,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 121,
+              "mean_probability": 0.027725619834710738,
+              "unsafe_rate": 0.11570247933884298
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.12312272727272727,
+              "unsafe_rate": 0.45454545454545453
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.5183,
+              "unsafe_rate": 0.6
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.920572222222222,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.32235714285714284,
+              "unsafe_rate": 0.8571428571428571
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.8745117647058823,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 13,
+              "mean_probability": 0.17238461538461536,
+              "unsafe_rate": 0.46153846153846156
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.37944,
+              "unsafe_rate": 0.9
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.4220125,
+              "unsafe_rate": 0.875
+            },
+            {
+              "n": 6,
+              "mean_probability": 0.46049999999999996,
+              "unsafe_rate": 0.6666666666666666
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.61595,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.8294900000000001,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 5,
+              "mean_probability": 0.57242,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 32,
+              "mean_probability": 0.9763656249999999,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.735,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 4,
+              "mean_probability": 0.26815,
+              "unsafe_rate": 0.5
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.7767714285714286,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 3,
+              "mean_probability": 0.21023333333333336,
+              "unsafe_rate": 1.0
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.17276164772727276,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 35,
+              "mean_probability": 0.08138285714285713,
+              "unsafe_rate": 0.3142857142857143
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.6744799999999999,
+              "unsafe_rate": 0.9428571428571428
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.02457142857142857,
+              "unsafe_rate": 0.08571428571428572
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.14726285714285714,
+              "unsafe_rate": 0.4857142857142857
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.013544444444444444,
+              "unsafe_rate": 0.08333333333333333
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.05314571428571429,
+              "unsafe_rate": 0.14285714285714285
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.03700285714285714,
+              "unsafe_rate": 0.14285714285714285
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.8873000000000001,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.3719228571428572,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.9723027777777775,
+              "unsafe_rate": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset": "agentharm",
+      "model": "nimble",
+      "n": 352,
+      "unsafe_n": 176,
+      "unsafe_rate": 0.5,
+      "mean_probability": 0.6009882164865055,
+      "signed_bias": 0.10098821648650548,
+      "brier": 0.12313768069795561,
+      "constant_prevalence_brier": 0.25,
+      "brier_skill_vs_empirical_prevalence": 0.5074492772081776,
+      "binning": {
+        "equal_width_5": {
+          "ece": 0.1620933566327122,
+          "occupied_bins": 5,
+          "cells": [
+            {
+              "n": 80,
+              "mean_probability": 0.5034522254019975,
+              "unsafe_rate": 0.1
+            },
+            {
+              "n": 37,
+              "mean_probability": 0.6977794379801363,
+              "unsafe_rate": 0.6486486486486487
+            },
+            {
+              "n": 43,
+              "mean_probability": 0.15097881645657296,
+              "unsafe_rate": 0.16279069767441862
+            },
+            {
+              "n": 58,
+              "mean_probability": 0.2966955108889218,
+              "unsafe_rate": 0.08620689655172414
+            },
+            {
+              "n": 134,
+              "mean_probability": 0.9086075091539924,
+              "unsafe_rate": 0.9850746268656716
+            }
+          ]
+        },
+        "equal_width_10": {
+          "ece": 0.16984424024650996,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 40,
+              "mean_probability": 0.45740736946463584,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 20,
+              "mean_probability": 0.7409169554710389,
+              "unsafe_rate": 0.8
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.0912473127245903,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 32,
+              "mean_probability": 0.2523995032534003,
+              "unsafe_rate": 0.09375
+            },
+            {
+              "n": 41,
+              "mean_probability": 0.15389254834593796,
+              "unsafe_rate": 0.17073170731707318
+            },
+            {
+              "n": 86,
+              "mean_probability": 0.9384530422299407,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 48,
+              "mean_probability": 0.8551342623929182,
+              "unsafe_rate": 0.9583333333333334
+            },
+            {
+              "n": 26,
+              "mean_probability": 0.35121367413264054,
+              "unsafe_rate": 0.07692307692307693
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.647029417402604,
+              "unsafe_rate": 0.47058823529411764
+            },
+            {
+              "n": 40,
+              "mean_probability": 0.5494970813393593,
+              "unsafe_rate": 0.2
+            }
+          ]
+        },
+        "equal_width_20": {
+          "ece": 0.17242428317496722,
+          "occupied_bins": 19,
+          "cells": [
+            {
+              "n": 23,
+              "mean_probability": 0.4740812104681264,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 8,
+              "mean_probability": 0.7707196101546288,
+              "unsafe_rate": 0.75
+            },
+            {
+              "n": 2,
+              "mean_probability": 0.0912473127245903,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.27355635000599754,
+              "unsafe_rate": 0.05555555555555555
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.1318554769862782,
+              "unsafe_rate": 0.13636363636363635
+            },
+            {
+              "n": 60,
+              "mean_probability": 0.9282040546337763,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 21,
+              "mean_probability": 0.8273881588663373,
+              "unsafe_rate": 0.9047619047619048
+            },
+            {
+              "n": 15,
+              "mean_probability": 0.37272029320398964,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 7,
+              "mean_probability": 0.612547252859388,
+              "unsafe_rate": 0.14285714285714285
+            },
+            {
+              "n": 18,
+              "mean_probability": 0.5709434847036997,
+              "unsafe_rate": 0.2777777777777778
+            },
+            {
+              "n": 27,
+              "mean_probability": 0.8767145651358145,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 19,
+              "mean_probability": 0.1794091572887019,
+              "unsafe_rate": 0.21052631578947367
+            },
+            {
+              "n": 26,
+              "mean_probability": 0.9621045520672431,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 11,
+              "mean_probability": 0.32188646630807355,
+              "unsafe_rate": 0.18181818181818182
+            },
+            {
+              "n": 22,
+              "mean_probability": 0.5319500240412626,
+              "unsafe_rate": 0.13636363636363635
+            },
+            {
+              "n": 17,
+              "mean_probability": 0.43484864340108986,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 14,
+              "mean_probability": 0.22519784314291819,
+              "unsafe_rate": 0.14285714285714285
+            },
+            {
+              "n": 10,
+              "mean_probability": 0.6711669325828552,
+              "unsafe_rate": 0.7
+            },
+            {
+              "n": 12,
+              "mean_probability": 0.7210485190153122,
+              "unsafe_rate": 0.8333333333333334
+            }
+          ]
+        },
+        "quantile_10_ties_preserved": {
+          "ece": 0.16748746505684473,
+          "occupied_bins": 10,
+          "cells": [
+            {
+              "n": 35,
+              "mean_probability": 0.4628245711326599,
+              "unsafe_rate": 0.0
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.8230389492852347,
+              "unsafe_rate": 0.8857142857142857
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.1424206888510121,
+              "unsafe_rate": 0.19444444444444445
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.3541630736419133,
+              "unsafe_rate": 0.05714285714285714
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.932176045009068,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.6663736377443586,
+              "unsafe_rate": 0.5714285714285714
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.8927031142371041,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.5445446831839426,
+              "unsafe_rate": 0.2
+            },
+            {
+              "n": 36,
+              "mean_probability": 0.9581070459551282,
+              "unsafe_rate": 1.0
+            },
+            {
+              "n": 35,
+              "mean_probability": 0.2364288900579725,
+              "unsafe_rate": 0.08571428571428572
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
